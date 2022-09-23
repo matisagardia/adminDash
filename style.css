@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    "sidebar nav"
+    "sidebar main";
+}
+
+.sidebar {
+    background-color: rgb(55, 74, 97);
+    grid-area: sidebar;
+}
+
+.nav {
+    background-color: rgb(255, 255, 255);
+    grid-area: nav;
+}
+
+.main {
+    background-color: rgb(182, 182, 182);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "titles titles titles"
+    "projects projects announcements"
+    "projects projects announcements"
+    "projects projects announcements";
+    gap: 20px;
+    padding: 30px 20px 50px 20px;
+}
+
+.firstMenu, .secondMenu {
+    margin: 30px 0 0 30px;
+    font-size: 20px;
+    font-weight: 200;
+    list-style-type: none;
+}
+
+li {
+    margin-top: 5px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+li a img {
+    margin-right: 15px;
+}
+
+.logo {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.topBar {
+    margin-top: 25px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchIcon {
+    height: 30px;
+    margin-right: 20px;
+}
+.search {
+    width: 500px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(182, 182, 182);
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.profile p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profile img {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.bottomBar {
+    margin-left: 40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.profile2 {
+    display: flex;
+    align-items: center;
+}
+
+.bottomProfileImg {
+    width: 80px;
+}
+
+.hi {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.buttons {
+    margin-right: 40px;
+    display: flex;
+    gap: 60px;
+}
+
+.buttons button {
+    width: 120px;
+    height: 40px;
+    background-color: rgb(55, 74, 97);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.projects {
+    grid-area: projects;
+    background-color: rgb(182, 182, 182);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project1, .project2, .project3, .project4, .project5, .project6 {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.announcements {
+    grid-area: announcements;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 40px;
+    font-size: 15px;
+}
+
+.trending {
+    grid-area: trending;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.projects div {
+    padding: 20px;
+    border-left: 10px solid;
+    border-color: rgb(252, 164, 49);
+}
+
+.projects div h2 {
+    margin-bottom: 10px;
+}
+
+.titles {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 200px;
+    margin-left: 10px;
+    grid-area: titles;
+}
+
+.announcements div {
+    border-bottom: 1px solid;
+    border-color: rgb(252, 164, 49);
+    margin-bottom: 10px;
+}
+
+.announcements div p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
